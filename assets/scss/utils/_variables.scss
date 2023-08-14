@@ -1,0 +1,188 @@
+/*///// Font Setting /////*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap');
+
+/*///// Color Setting /////*/
+/* Most Use Colors */
+$primary: #AA0601;
+$secondary: #650300;
+$red-1: #9F1213;
+$pink: #FBF2F2;
+$white: #ffffff;
+$light: #00000020;
+$black-1: #000000;
+$black-2: #0A0A0A; // 'share' text
+
+/* Gray Hue Colors */
+$gray-1: #F2F2F2; // pager next-page bg-color
+$gray-2: #ECECEC; // store-card border
+$gray-3: #DCDCDC; // nav border
+$gray-4: #DEE2E6; // product-card border
+$gray-5: #CED4DA; // drop-down box border
+$gray-6: #707070; // light small text
+$gray-7: #555555; // pager text & border
+$gray-8: #495057; // drop-down box text
+$gray-9: #212529; // dark text
+
+/* Other Colors */
+$product-color-1: #5F3E2D;
+$product-color-2: #B75929;
+
+.d-block{
+    display: block;
+}
+.d-flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+} 
+.justify-center{
+    justify-content: center;
+} 
+.align-items-center{
+    align-items: center;
+}
+.align-items-end{
+    align-items: end;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+// background
+.bg-primary{
+    background-color: $primary;
+}
+.bg-secondary{
+    background-color: $secondary;
+}
+.bg-light{
+    background-color: $light;
+}
+// spacer
+.p-16{
+    padding: 16px;
+}
+.py-8{
+    padding: 8px 0;
+}
+.py-16{
+    padding: 16px 0;
+}
+.pt-48{
+    padding-top: 48px;
+}
+.pb-32{
+    padding-bottom: 32px;
+}
+.m-0{
+    margin: 0 !important;
+}
+.mt-8{
+    margin-top: 8px;
+}
+.mt-16{
+    margin-top: 16px;
+}
+.mb-4{
+    margin-bottom: 4px;
+}
+.mb-8{
+    margin-bottom: 8px;
+}
+.mb-16{
+    margin-bottom: 16px;
+}
+.mb-24{
+    margin-bottom: 24px;
+}
+.mb-32{
+    margin-bottom: 32px;
+}
+.mb-40{
+    margin-bottom: 40px;
+}
+.mb-48{
+    margin-bottom: 48px;
+}
+.mb-72{
+    margin-bottom: 72px;
+
+}
+.mr-8{
+    margin-right: 8px;
+}
+.mr-12{
+    margin-right: 12px;
+}
+.mr-24{
+    margin-right: 24px;
+}
+.mr-32{
+    margin-right: 32px;
+}
+.mr-48{
+    margin-right: 48px;
+}
+.mr-64{
+    margin-right: 64px;
+}
+.ml-12{
+    margin-left: 12px;
+}
+
+.fs-14{
+    font-size: 14px;
+}
+.fs-16{
+    font-size: 16px;
+}
+.fs-20{
+    font-size: 20px;
+}
+.fs-24{
+    font-size: 24px;
+}
+.fs-32{
+    font-size: 32px;
+}
+.fs-36{
+    font-size: 36px;
+}
+.fs-48{
+    font-size: 48px;
+}
+.fs-64{
+    font-size: 64px;
+}
+.fw-medium{
+    font-weight: 500;
+}
+.fw-bold{
+    font-weight: 700;
+}
+.fw-black{
+    font-weight: 900;
+}
+.fs-italic{
+    font-style: italic;
+}
+
+// border
+.border-bottom{
+    border-bottom: 1px solid $light;
+}
+
+// hover
+.hover-contrast{
+    &:hover {
+        filter: contrast(1.2);
+    }
+}
+.hover-primary{
+    &:hover{
+        color: $primary;
+    }
+}
