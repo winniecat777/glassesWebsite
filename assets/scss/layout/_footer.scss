@@ -1,4 +1,29 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+.menu{
+  li{
+    &:hover{
+      text-decoration: underline;
+      cursor:pointer;
+    }
+  }
+}
+.icon{
+  li{
+    display:inline-block;
+  }
+  img{
+    width: 48px;
+    height: 48px;
+  }
+}
+.material-icons{
+  font-size: 48px;
+}
+.phone{
+  padding: 6px;
+}
+.mail{
+  padding: 8px 4px;
+}
+.copyright{
+  border-top: 1px solid white;
 }

@@ -1,4 +1,14 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.container{
+  img{
+    width: 80px;
+    height: 48px;
+  }
+}
+.menu{
+  li{
+    &:hover{
+      text-decoration: underline;
+      cursor:pointer;
+    }
+  }
 }
