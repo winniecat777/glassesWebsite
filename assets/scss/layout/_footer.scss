@@ -1,29 +1,96 @@
-.menu{
-  li{
-    &:hover{
-      text-decoration: underline;
-      cursor:pointer;
+
+.footer{
+  padding: 48px 0 32px 0;
+  @include pad{
+    padding: 48px 0 40px 0;
+  }
+  @include mobile{
+    padding: 24px 0;
+  }
+  &-menu{
+    margin-bottom: 40px;
+    a{
+      &:hover{
+        text-decoration: underline;
+        cursor:pointer;
+      }
+    }
+    @include pad{
+      margin-bottom: 32px;
+    }
+    @include mobile{
+      display: none;
     }
   }
-}
-.icon{
-  li{
-    display:inline-block;
+   &-Info{
+    a{
+      &:hover{
+        text-decoration: underline;
+        cursor:pointer;
+      }
+    }
+    @include mobile{
+      a,
+      span {
+        font-size: 16px;
+      }
+      span {
+        margin-right: 8px;
+      }
+    }  
   }
-  img{
-    width: 48px;
-    height: 48px;
-  }
+  &-icon{
+    li{
+      width: 48px;
+      height: 48px;
+      @include pad{
+        width: 40px;
+        height: 40px;
+        margin-right: 16px;
+      }
+      @include mobile{
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+      }
+    } 
+  } 
 }
+
 .material-icons{
   font-size: 48px;
+  @include pad{
+    font-size: 40px;
+  }
+  @include mobile{
+    font-size: 24px;
+  }
 }
-.phone{
-  padding: 6px;
-}
-.mail{
-  padding: 8px 4px;
-}
+
 .copyright{
   border-top: 1px solid white;
+  padding: 32px 0;
+  @include mobile{
+    padding: 24px 0;
+  }
+  .policy {
+    a{
+      &:hover{
+        text-decoration: underline;
+        cursor:pointer;
+      }
+    }
+    @include mobile{
+      display: block;
+      li {   
+        margin-top: 8px;
+        font-size: 16px;      
+      }
+    }  
+  }
 }
+
+
+
+
+

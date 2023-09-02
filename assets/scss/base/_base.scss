@@ -6,11 +6,20 @@
 
 
 body{
-    font-family: 'Noto Sans TC', sans-serif ,'Roboto Serif', serif;
+    font-family: 'Noto Sans TC', 'Roboto Serif', sans-serif ;
     line-height: 1.5;
 }
 
 .container{
     max-width: 1296px;
     margin: 0 auto;
+    padding: 16px 12px;
+    @include pad {
+        width: 100%;
+        padding: 0 36px;
+    }
+    @include mobile {
+        width: 100%;
+        padding: 0 16px;
+    }
 }
