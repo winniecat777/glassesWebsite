@@ -1,0 +1,15 @@
+.faq{
+    padding: 96px 0 80px 0;
+    h2{
+        border-left: 8px solid #9F1213;
+    }
+    &-item{
+        margin-bottom: 32px;
+        @include mobile{
+            margin-bottom: 24px;
+        }
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
