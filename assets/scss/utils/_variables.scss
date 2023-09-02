@@ -35,7 +35,10 @@ $product-color-2: #B75929;
 } 
 .justify-center{
     justify-content: center;
-} 
+}
+.justify-start{
+    justify-content: start;
+}  
 .align-items-center{
     align-items: center;
 }
@@ -107,6 +110,9 @@ $product-color-2: #B75929;
 }
 .pb-32{
     padding-bottom: 32px;
+}
+.ps-16{
+    padding-left: 16px;
 }
 .m-0{
     margin: 0 !important;
@@ -213,10 +219,6 @@ $product-color-2: #B75929;
     font-style: italic;
 }
 
-// border
-.border-bottom{
-    border-bottom: 1px solid $light;
-}
 
 // hover
 .hover-contrast{
