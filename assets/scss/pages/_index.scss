@@ -4,6 +4,18 @@
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
+    @include pad{
+       background-image: url('/assets/images/home-header-sm.png/'); 
+    }
+    @include mobile{
+        padding: 144px 0;
+        h2{
+            font-size: 24px;
+        }
+        h4{
+            font-size: 16px; 
+        }
+    }
 }
 .btn-buy{
     padding: 6px 12px;
@@ -11,11 +23,21 @@
 .pink-bg{
     padding: 80px 0;
     background-color: $pink;
+    @include mobile{
+        padding: 40px 0;
+    }
     li{
         width: calc((100% - 24px * 3) / 4);
         img{
         width: 100px;
         height: 100px;
+        }
+        @include pad{
+            width: calc((100% - 24px) / 2);
+			margin-bottom: 24px; 
+        }
+        @include mobile{
+            width: 100%;
         }
     }    
 }
@@ -23,6 +45,10 @@
     li{
         text-align: center;
         width: calc((100% - 24px * 2) / 3);
+        @include pad{
+            width: 100%;
+			margin-bottom: 24px;
+        }
         a{
             font-weight: 900;
             font-style: italic;
@@ -31,6 +57,11 @@
             img{
                 width: 416px;
                 height: auto;
+                @include pad{
+                    display: block;
+                    margin: 0 auto;
+                    width: 336px;
+                }
             }
         }
     }
@@ -40,13 +71,23 @@
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
+    @include pad{
+        background-image: url('/assets/images/index-bg-md.png');
+    }
+    @include mobile{
+        background-image: url('/assets/images/index-bg-sm.png');
+    }
     li{
         width: 50%;
+        @include pad{
+            width: 100%;
+			margin-bottom: 24px;
+        }
         &:hover{
             a{
                 filter: contrast(1.2); 
             }
-            span{
+            p{
                 background-color: $primary;
                 color: #fff;
             }
@@ -57,7 +98,7 @@
                 height: auto;
             }
         }
-        span{
+        p{
             background-color: #fff;
             font-weight: 900;
             font-style: italic;
@@ -78,6 +119,14 @@
             height: auto;
             object-fit: contain;
         }
+        @include pad{
+            width: calc((100% - 24px)/2);
+			margin-bottom: 24px;
+        }
+        @include mobile{
+            width: 100%;
+			margin-bottom: 16px;
+        }
     }
 }
 .contact{
@@ -86,7 +135,17 @@
 .form {
 	width: 33.125%;
 	margin: 0 auto;
-
+    @include pad{
+        width: 75%;
+    }
+    @include mobile{
+        width: 100%;
+    }
+    p{
+        @include pad{
+            font-size: 16px;   
+        }
+    }
 	&-input {
         background-color: transparent;
 		width: 100%;
@@ -102,7 +161,9 @@
 		padding: 16px 0px;
 		background: $primary;
 		color: white;
-	
+        @include mobile{
+            width: 100%;
+        }
 		&:hover{
 			background: $secondary;
 		}
