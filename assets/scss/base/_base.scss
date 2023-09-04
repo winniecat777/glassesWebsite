@@ -16,10 +16,12 @@ body{
     padding: 16px 12px;
     @include pad {
         width: 100%;
-        padding: 0 36px;
+        padding-left: 36px;		
+		padding-right: 36px;
     }
     @include mobile {
         width: 100%;
-        padding: 0 16px;
+        padding-left: 16px;		
+		padding-right: 16px;
     }
 }
